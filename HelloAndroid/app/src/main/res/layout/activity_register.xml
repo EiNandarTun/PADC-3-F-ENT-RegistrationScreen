@@ -20,141 +20,142 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <RelativeLayout
-        android:id="@+id/rl_register"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
-            android:id="@+id/btn_to_login"
+        <LinearLayout
+            android:id="@+id/rl_register"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/btn_to_login"
-            android:gravity="center_vertical|right"
-            android:textColor="@color/colorPrimary"
-            android:textSize="17sp"
-            />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginRight="36dp"
-            android:layout_marginTop="40dp"
-            android:textColorHint="@color/colorPrimary">
-            <EditText
-                android:id="@+id/et_name"
+            <TextView
+                android:id="@+id/btn_to_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
-                android:textColorHint="@color/colorPrimary"
-
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/btn_to_login"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
                 />
-        </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginRight="36dp"
-            android:layout_marginTop="15dp"
-            android:layout_below="@id/input_name"
-            android:textColorHint="@color/colorPrimary">
-            <EditText
-                android:id="@+id/et_phone"
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Phone"
-                android:textColorHint="@color/colorPrimary"
-
-                />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginRight="36dp"
-            android:layout_marginTop="15dp"
-            android:layout_below="@id/input_phone"
-            android:textColorHint="@color/colorPrimary">
-            <EditText
-                android:id="@+id/et_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Email"/>
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginRight="36dp"
-            android:layout_marginTop="18dp"
-            android:layout_below="@id/input_email"
-            android:textColorHint="@color/colorPrimary">
-            <EditText
-                android:id="@+id/et_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:drawableRight="@drawable/ic_visibility_black_24dp"/>
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_confirm_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginRight="36dp"
-            android:layout_marginTop="15dp"
-            android:layout_below="@id/input_password"
-            android:textColorHint="@color/colorPrimary">
-            <EditText
-                android:id="@+id/et_confirm_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                android:drawableRight="@drawable/ic_visibility_black_24dp"
-                />
-        </android.support.design.widget.TextInputLayout>
-
-
-
-        <RadioGroup
-            android:id="@+id/rg_gender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/input_confirm_password"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
-            <RadioButton
-                android:id="@+id/rb_male"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="36dp"
-                android:text="male"
-                android:textColor="@color/colorPrimary"
-                />
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="40dp"
+                android:textColorHint="@color/colorPrimary">
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:textColorHint="@color/colorPrimary"
 
-            <RadioButton
-                android:id="@+id/rb_female"
-                android:layout_width="wrap_content"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="female"
-                android:layout_alignLeft="@id/rb_male"
-                android:textColor="@color/colorPrimary"
-                />
-        </RadioGroup>
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/colorPrimary">
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:textColorHint="@color/colorPrimary"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/colorPrimary">
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="18dp"
+                android:textColorHint="@color/colorPrimary">
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:drawableRight="@drawable/ic_visibility_black_24dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/colorPrimary">
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:drawableRight="@drawable/ic_visibility_black_24dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:text="male"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="female"
+                    android:layout_alignLeft="@id/rb_male"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </RadioGroup>
 
             <EditText
                 android:id="@+id/et_address"
@@ -164,36 +165,39 @@
                 android:layout_marginLeft="36dp"
                 android:layout_marginRight="36dp"
                 android:layout_marginTop="15dp"
-                android:layout_below="@id/rg_gender"
                 android:textColorHint="@color/colorPrimary"/>
 
 
-        <CheckBox
-            android:id="@+id/cb_address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="I'm at my home."
-            android:layout_below="@id/et_address"
-            android:layout_marginLeft="36dp"
-            android:textColor="@color/colorPrimary"
-            android:textSize="17sp"
-            />
+            <CheckBox
+                android:id="@+id/cb_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm at my home."
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                />
 
 
-        <Button
-            android:id="@+id/btn_register"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Register"
-            android:layout_marginRight="36dp"
-            android:layout_marginLeft="36dp"
-            android:textAllCaps="false"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white_full"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="5dp"
-            />
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_marginRight="36dp"
+                android:layout_marginLeft="36dp"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white_full"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="150dp"
+                />
 
-    </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </android.support.design.widget.CoordinatorLayout>
